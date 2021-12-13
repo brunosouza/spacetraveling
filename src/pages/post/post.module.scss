@@ -1,1 +1,59 @@
 // TODO
+.bannerWrapper {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+  background: #000;
+  margin-bottom: calc(80 / 16) * 1rem;
+}
+
+.postHeader {
+  h1 {
+    font-size: calc(48 / 16) * 1rem;
+    font-weight: 700;
+    line-height: calc(58 / 16) * 1rem;
+    color: var(--heading);
+    margin-bottom: calc(24 / 16) * 1rem;
+    letter-spacing: calc(-0.5 / 16) * 1rem;
+  }
+  time,
+  span {
+    font-size: calc(14 / 16) * 1rem;
+    display: inline-flex;
+    align-items: center;
+    color: var(--info);
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: calc(8 / 16) * 1rem;
+    }
+  }
+  time + span {
+    margin: 0 calc(24 / 16) * 1rem;
+  }
+  .postMeta {
+    margin-bottom: calc(64 / 16) * 1rem;
+  }
+}
+.postContent {
+  h2 {
+    font-size: calc(36 / 16) * 1rem;
+    color: var(--heading);
+    margin-bottom: calc(65 / 16) * 1rem;
+  }
+  h2 + div {
+    margin-bottom: calc(55 / 16) * 1rem;
+  }
+  p {
+    color: var(--body);
+    font-size: calc(18 / 16) * 1rem;
+    line-height: calc(25.2 / 16) * 1rem;
+    margin-top: calc(25 / 16) * 1rem;
+  }
+  a {
+    color: var(--highlight);
+    font-weight: 600;
+    text-decoration: none;
+  }
+}

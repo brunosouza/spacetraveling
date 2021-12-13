@@ -1,1 +1,55 @@
 // TODO
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.posts {
+  a {
+    color: var(--heading);
+    display: block;
+    text-decoration: none;
+    h1 {
+      font-size: 1.75rem;
+      line-height: 2.118125rem;
+      font-weight: 700;
+      margin-bottom: calc(8 / 16) * 1rem;
+    }
+    h2 {
+      color: var(--body);
+      font-size: calc(18 / 16) * 1rem;
+      margin-bottom: calc(24 / 16) * 1rem;
+    }
+    time,
+    span {
+      font-size: calc(14 / 16) * 1rem;
+      display: inline-flex;
+      align-items: center;
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-right: calc(8 / 16) * 1rem;
+      }
+    }
+    time {
+      margin-right: calc(24 / 16) * 1rem;
+    }
+
+    & + a {
+      margin-top: calc(24 / 16) * 1rem;
+    }
+  }
+}
+
+.loadMore {
+  color: var(--highlight);
+  font-weight: 600;
+  font-size: calc(18 / 16) * 1rem;
+  line-height: calc(21.78 / 16) * 1rem;
+  margin-top: calc(64 / 16) * 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  &:hover,
+  &:focus {
+    filter: brightness(0.75);
+  }
+}
