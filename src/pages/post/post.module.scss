@@ -34,6 +34,11 @@
   }
   .postMeta {
     margin-bottom: calc(64 / 16) * 1rem;
+    .lastModified {
+      display: block;
+      clear: both;
+      margin-top: 1rem;
+    }
   }
 }
 .postContent {
@@ -56,4 +61,25 @@
     font-weight: 600;
     text-decoration: none;
   }
+}
+
+@keyframes loadingAnim {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.loading {
+  color: var(--highlight);
+  font-size: calc(36 / 16) * 1rem;
+  text-align: center;
+  display: block;
+  margin: calc(32 / 16) * 1rem 0;
+  animation: loadingAnim 1.5s ease-in-out infinite;
 }
